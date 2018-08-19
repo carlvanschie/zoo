@@ -1,4 +1,4 @@
-package com.vanschie.acceptancetest;
+package com.vanschie.acceptancetest.step;
 
 
 import cucumber.api.java.en.Then;

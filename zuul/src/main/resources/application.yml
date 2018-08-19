@@ -1,11 +1,7 @@
 server:
   port: 8888
 
-zuul:
-  routes:
-    books:
-      url: http://localhost:8888
-
-ribbon:
-  eureka:
-    enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
