@@ -2,6 +2,7 @@
 !gradle/wrapper/gradle-wrapper.jar
 
 **/.idea/
-*.iml
+**/out/
+**/build/
 
-
+**/*.iml

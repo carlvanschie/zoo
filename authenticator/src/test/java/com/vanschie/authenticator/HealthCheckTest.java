@@ -15,7 +15,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class HealthCheckControllerTest {
+public class HealthCheckTest {
 
     @Autowired
     private MockMvc mockMvc;

@@ -1,8 +1,12 @@
 subprojects {
     apply plugin: 'java'
+    apply plugin: 'idea'
 
     repositories {
         mavenCentral()
+        maven {
+            url 'http://repo.spring.io/milestone'
+        }
     }
 
     dependencies {

@@ -18,7 +18,7 @@ public class HealthCheckSteps {
 
     @When("^the client calls the health check endpoint$")
     public void theClientCallsTheHealthCheckEndpoint() {
-        entity = restTemplate.getForEntity("http://localhost:8080/actuator/health", String.class);
+        entity = restTemplate.getForEntity("http://localhost:8888/actuator/health", String.class);
     }
 
     @Then("^the client receives status code of (\\d+)$")

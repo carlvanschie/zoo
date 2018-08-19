@@ -1,1 +1,6 @@
+rootProject.name = 'zoo'
+
+include 'acceptance-test'
 include 'authenticator'
+include 'eureka'
+include 'zuul'
