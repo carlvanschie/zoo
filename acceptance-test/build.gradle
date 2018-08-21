@@ -1,5 +1,7 @@
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'java'
+apply plugin: 'idea'
 
 group = 'com.vanschie'
 version = '0.0.1-SNAPSHOT'
@@ -16,7 +18,6 @@ buildscript {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
-
 
 dependencies {
     testCompile 'org.springframework.boot:spring-boot-starter-web'

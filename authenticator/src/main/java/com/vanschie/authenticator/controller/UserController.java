@@ -2,6 +2,7 @@ package com.vanschie.authenticator.controller;
 
 import com.vanschie.authenticator.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,14 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+
+    @Value("${test.value}")
+    private String value;
+
+    @RequestMapping(value = "value", method = RequestMethod.GET)
+    public String getValue() {
+        return value;
+    }
 
     @RequestMapping(value="/user", method = RequestMethod.GET)
     public List<User> listUser(){
