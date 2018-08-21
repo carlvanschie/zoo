@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: configuration
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:/home/c/work/zoo/configuration/src/main/resources/config
