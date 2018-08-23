@@ -19,7 +19,7 @@ public class UserController {
     @Value("${test.value}")
     private String value;
 
-    @RequestMapping(value = "value", method = RequestMethod.GET)
+    @RequestMapping(value = "/value", method = RequestMethod.GET)
     public String getValue() {
         return value;
     }

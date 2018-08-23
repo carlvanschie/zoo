@@ -9,3 +9,6 @@ management:
 
 test:
   value: complete
+
+server:
+  port: 10000
