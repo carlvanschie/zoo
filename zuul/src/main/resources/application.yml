@@ -12,3 +12,8 @@ eureka:
     fetchRegistry: true
   serviceurl:
     defaultzone: http://localhost:8761/eureka/
+
+zuul:
+  sensitive-headers:
+    - Cookie
+    - Set-Cookie

@@ -9,4 +9,3 @@ spring:
       discovery:
         serviceId: configuration
         enabled: true
-

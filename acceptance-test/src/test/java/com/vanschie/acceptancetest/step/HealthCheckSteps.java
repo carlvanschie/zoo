@@ -14,23 +14,23 @@ public class HealthCheckSteps {
 
     private static final Client CLIENT = new Client(new RestTemplate());
 
-    private boolean avalible;
+    private boolean responce;
 
-    @When("^the client calls the health check endpoint$")
-    public void theClientCallsTheHealthCheckEndpoint() {
-    }
-
-    @Then("^the client receives status code of (\\d+)$")
-    public void theClientReceivesStatusCodeOf() {
-    }
 
     @When("^the client calls the health check endpoint all services$")
     public void theClientCallsTheHealthCheckEndpointAllServices() {
-        avalible = CLIENT.allServicesAreAvalible();
+        responce = CLIENT.allServicesAreAvalible();
+    }
+
+
+    @When("^the client calls the authenticate endpoint$")
+    public void theClientCallsTheAuthenticateEndpoint() {
+        responce = CLIENT.authenticate("bill", "abc123");
     }
 
     @Then("^the client returns true$")
     public void theClientReturnsTrue() {
-        assertThat(avalible, is(true));
+        assertThat(responce, is(true));
     }
+
 }
